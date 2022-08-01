@@ -1,0 +1,108 @@
+﻿div.ana {
+    width: 560px;
+    border-radius: 50px 50px;
+    margin: 10px auto;
+    height: 80px;
+    padding: 120px 0 120px 0;
+    background-color: rgb(24,36,52);
+}
+
+div.logo {
+    margin-top: -2px;
+    margin-left: 230px;
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(247,215,107);
+    transform:rotate(45deg);
+}
+div.logo1 {
+    margin-top:-80px;margin-left:250px;
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(247,215,107);
+    transform: rotate(45deg);
+}
+div.alt {float:left;
+    width: 560px;
+    height: 50px;
+    background-color: rgb(247,215,107)
+}
+div.üstsol {margin-top:-50px;border-radius:0 20px 20px 0;
+    float: left;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(247,215,107)
+}
+div.üstsağ {
+    margin-top: -50px;
+    border-radius: 20px 0 0 20px;
+    float: right;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(247,215,107);
+}
+div.renkalt {float:left;border-radius:0 0 50px 50px;
+    width: 560px;
+    height: 72px;
+    background-color:rgb(43, 52, 91)
+}
+div.anaön {
+    width: 560px;
+    border-radius: 50px 50px;
+    margin: 10px auto;
+    height: 80px;
+    padding: 120px 0 120px 0;
+    background-color: rgb(25,32,64);
+}
+div.önsekil1 {margin-top:-100px; margin-left:480px;
+    width: 40px;
+    height: 40px;
+    border: 10px solid rgb(247,215,107);
+    transform: rotate(45deg);
+}
+div.önsekil2 {margin-top:-60px;margin-left:455px;
+    width: 40px;
+    height: 40px;
+    border: 10px solid rgb(247,215,107);
+    transform: rotate(45deg);
+}
+div.önsekil3 {
+    margin-top: 156px;
+    margin-left: 480px;
+    width: 40px;
+    height: 40px;
+    border: 10px solid rgb(247,215,107);
+    transform: rotate(45deg);
+}
+div.önsekil4 {margin-top:-60px;margin-left:455px;
+   width: 40px;
+    height: 40px;
+    border: 10px solid rgb(247,215,107);
+    transform: rotate(45deg);
+    
+    
+}
+div.şablon {text-align:center; padding:5px;
+    height:180px;width:40px;
+    border: 1px solid rgb(247,215,107);
+    background-color: rgb(247,215,107);
+    border-radius: 20px 20px 0 0;
+    margin-top: -168px;
+    margin-left: 40px
+}
+img{
+    margin-top:20px;
+}
+
+div.person {
+    margin-left:36px;
+    margin-top: -280px;
+    width: 64px;
+    height: 64px;
+    background-image: url(ad.png);
+    
+}
+    
+
+
+
