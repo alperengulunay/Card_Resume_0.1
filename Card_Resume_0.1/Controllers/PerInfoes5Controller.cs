@@ -1,5 +1,4 @@
-﻿using Card_Resume_0._1.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -7,17 +6,18 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Card_Resume_0._1.Views.Home;
 
 namespace Card_Resume_0._1.Controllers
 {
     public class PerInfoes5Controller : Controller
     {
-        private AAContext db = new AAContext();
+        private ResumeDBContext db = new ResumeDBContext();
 
         // GET: PerInfoes5
         public ActionResult Index()
         {
-            return View(db.PerInfoes.ToList());
+            return View(db.PerInfos.ToList());
         }
 
         // GET: PerInfoes5/Details/5
@@ -27,7 +27,7 @@ namespace Card_Resume_0._1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PerInfo perInfo = db.PerInfoes.Find(id);
+            PerInfo perInfo = db.PerInfos.Find(id);
             if (perInfo == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace Card_Resume_0._1.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.PerInfoes.Add(perInfo);
+                db.PerInfos.Add(perInfo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace Card_Resume_0._1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PerInfo perInfo = db.PerInfoes.Find(id);
+            PerInfo perInfo = db.PerInfos.Find(id);
             if (perInfo == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace Card_Resume_0._1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PerInfo perInfo = db.PerInfoes.Find(id);
+            PerInfo perInfo = db.PerInfos.Find(id);
             if (perInfo == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace Card_Resume_0._1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            PerInfo perInfo = db.PerInfoes.Find(id);
-            db.PerInfoes.Remove(perInfo);
+            PerInfo perInfo = db.PerInfos.Find(id);
+            db.PerInfos.Remove(perInfo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

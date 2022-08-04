@@ -4,17 +4,16 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Runtime.Remoting.Contexts;
 using System.Web;
 using System.Web.Mvc;
-using Card_Resume_0._1.Models;
+using Card_Resume_0._1.Views.Home;
 
 
 namespace Card_Resume_0._1.Controllers
 {
     public class HomeController : Controller
     {
-        private AAContext db = new AAContext();
+        private ResumeDBContext db = new ResumeDBContext();
 
         // GET: Home
         public ActionResult Index()
@@ -29,8 +28,9 @@ namespace Card_Resume_0._1.Controllers
 
         public ActionResult Card()
         {
-            var lastInfo = db.PerInfoes.OrderByDescending(p => p.ID).FirstOrDefault();
-            return View(lastInfo);
+            PerInfo perInfo = db.PerInfos.Find(db.PerInfos.Count() + 9);
+            //PerInfo perInfo = db.PerInfos.Find(10);
+            return View(perInfo);
         }
 
         public ActionResult GeneratePDF()
@@ -45,17 +45,18 @@ namespace Card_Resume_0._1.Controllers
                 PageOrientation = Rotativa.Options.Orientation.Portrait,
                 ContentDisposition = Rotativa.Options.ContentDisposition.Inline
             };
+
             return report;
         }
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index([Bind(Include = "ID,Name1,Adres1,Tel1,E_Posta1")] Models.PerInfo perInfo)
+        public ActionResult Index([Bind(Include = "ID,Name1,Adres1,Tel1,E_Posta1")] PerInfo perInfo)
         {
             if (ModelState.IsValid)
             {
-                db.PerInfoes.Add(perInfo);
+                db.PerInfos.Add(perInfo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

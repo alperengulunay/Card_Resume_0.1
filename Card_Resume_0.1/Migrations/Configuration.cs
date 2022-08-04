@@ -5,7 +5,7 @@ namespace Card_Resume_0._1.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Card_Resume_0._1.Models.AAContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Card_Resume_0._1.Views.Home.ResumeDBContext>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@ namespace Card_Resume_0._1.Migrations
             ContextKey = "Card_Resume_0._1.Views.Home.ResumeDBContext";
         }
 
-        protected override void Seed(Card_Resume_0._1.Models.AAContext context)
+        protected override void Seed(Card_Resume_0._1.Views.Home.ResumeDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 
