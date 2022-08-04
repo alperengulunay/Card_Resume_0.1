@@ -129,6 +129,8 @@ div.önsekil4 {
     height: 40px;
     border: 10px solid rgb(247,215,107);
     -webkit-transform: rotate(45deg);
+    
+    
 }
 div.şablon {
     text-align: center;
@@ -145,13 +147,11 @@ div.şablon {
 img {
     margin-top: 20px;
     position: relative;
-}
-
 div.person {background-repeat:no-repeat;
     margin-left: 36px;
     position: relative;
     margin-top: -300px;
-    width: 64px;
+    margin-left:36px;
     height:80px;
     background-image:url(~\Content\img\ad.jpg);
 }
@@ -162,13 +162,13 @@ div.person {background-repeat:no-repeat;
     margin-top: -640px;
     height: auto;
     width: 570px;
+    background-image: url(ad.png);
+    
 }
 #tel1{margin-left: 120px ; margin-top:28px;width:300px;border:none;color:white;
      background-color: rgb(25,32,64);line-height:20px;}
 #eposta1{margin-left:120px;width:300px;font-weight:bolder ;
     color:white; background-color: rgb(25,32,64);border:none}
-
-
 
 
 #adres1{margin-left:120px;width:300px;color:white;height:40px; border:none;
@@ -179,5 +179,7 @@ div.person {background-repeat:no-repeat;
     color: rgb(247,215,107);
    text-transform: capitalize;letter-spacing:2px;font-weight:bolder;
     width:300px;border:none;background-color: rgb(25,32,64);font-size:18pt;
+
+
 
 }
