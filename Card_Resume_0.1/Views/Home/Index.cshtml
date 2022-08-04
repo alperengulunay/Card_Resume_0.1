@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="~/Content/klas2.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/klas2.css" rel="stylesheet" type="text/css" />
     <title></title>
     <script src="java.js" type="text/javascript"></script>
 </head>
@@ -16,14 +16,14 @@
         <legend>
             KARTVİZİT FORMU
         </legend>
-         @using (Html.BeginForm())
-          {
+        @using (Html.BeginForm())
+        {
             @Html.AntiForgeryToken()
             <table>
                 <tr>
                     <td id=ad>Adınız Soyadınız : </td>
                     <td>
-                        @Html.EditorFor(model => model.Name1, new { htmlAttributes = new { @class="name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
+                        @Html.EditorFor(model => model.Name1, new { htmlAttributes = new { @class = "name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
                         @*@Html.ValidationMessageFor(model => model.Name1, "", new { @class = "text-danger" })*@
                     </td>
                 </tr>
@@ -59,7 +59,7 @@
                     <td><input type="button" onclick="location.href='/Home/GeneratePDF';" id="pdf" value="YAZDIR"></td>
                 </tr>
             </table>
-          }
+        }
     </fieldset>
     <!-- KARTVİZİT ARKA-->
     <div id=sayfa>
