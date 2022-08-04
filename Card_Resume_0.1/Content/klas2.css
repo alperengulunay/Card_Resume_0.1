@@ -59,7 +59,7 @@ div.logo {
     width: 60px;
     height: 60px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.logo1 {
@@ -69,7 +69,7 @@ div.logo1 {
     width: 60px;
     height: 60px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.alt {
@@ -126,7 +126,7 @@ div.önsekil1 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.önsekil2 {
@@ -136,7 +136,7 @@ div.önsekil2 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.önsekil3 {
@@ -146,7 +146,7 @@ div.önsekil3 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.önsekil4 {
@@ -156,7 +156,7 @@ div.önsekil4 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 div.şablon {
