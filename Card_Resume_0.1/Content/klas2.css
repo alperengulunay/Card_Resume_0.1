@@ -1,23 +1,40 @@
-fieldset{
-	width:500px; height:600px ;border: 10px solid darkkhaki; 
-	font-family:fantasy; line-height: 30px;
-	background-image:url(/img/b.jpg);background-size: cover;
-	background-position: relativ;
+fieldset {
+    width: 500px;
+    height: 600px;
+    border: 10px solid darkkhaki;
+    font-family: fantasy;
+    line-height: 30px;
+    background-image: url(b.jpg);
+    background-size: cover;
+    background-position: relativ;
 }
-legend{
+
+legend {
     color: #224059;
     background-color: #b5c9e2;
     border: 1px solid #31557f;
     padding: 2px 6px
 }
-input[type=text]{width:200px;height:30px ; margin-top: 20px; 
-	background-color: lightblue;border-radius: 10px 10px;
 
+input[type=text] {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: lightblue;
+    border-radius: 10px 10px;
 }
-textarea{margin-top: 20px; background-color: lightblue; 
-	resize: none; border-radius:0 20px 0 20px; 
-	border:3px solid black; }
-#ad{margin-top:50px ; font-family: fantasy; line-height: 15px;
+
+textarea#adres {
+    margin-top: 20px;
+    background-color: lightblue;
+    border-radius: 0 20px 0 20px;
+    border: 3px solid black;
+}
+
+#ad {
+    margin-top: 50px;
+    font-family: fantasy;
+    line-height: 15px;
 }
 
 
@@ -25,7 +42,8 @@ textarea{margin-top: 20px; background-color: lightblue;
 
 
 
-div.ana {position:relative;
+div.ana {
+    position: relative;
     width: 560px;
     border-radius: 50px 50px;
     margin: 10px auto;
@@ -41,8 +59,9 @@ div.logo {
     width: 60px;
     height: 60px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 div.logo1 {
     position: relative;
     margin-top: -80px;
@@ -50,8 +69,9 @@ div.logo1 {
     width: 60px;
     height: 60px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 div.alt {
     float: left;
     position: relative;
@@ -59,6 +79,7 @@ div.alt {
     height: 50px;
     background-color: rgb(247,215,107)
 }
+
 div.üstsol {
     margin-top: -50px;
     border-radius: 0 20px 20px 0;
@@ -68,6 +89,7 @@ div.üstsol {
     height: 50px;
     background-color: rgb(247,215,107)
 }
+
 div.üstsağ {
     position: relative;
     margin-top: -50px;
@@ -77,6 +99,7 @@ div.üstsağ {
     height: 50px;
     background-color: rgb(247,215,107);
 }
+
 div.renkalt {
     float: left;
     border-radius: 0 0 50px 50px;
@@ -85,6 +108,7 @@ div.renkalt {
     height: 72px;
     background-color: rgb(43, 52, 91)
 }
+
 div.anaön {
     width: 560px;
     position: relative;
@@ -94,6 +118,7 @@ div.anaön {
     padding: 120px 0 120px 0;
     background-color: rgb(25,32,64);
 }
+
 div.önsekil1 {
     margin-top: -100px;
     margin-left: 480px;
@@ -101,8 +126,9 @@ div.önsekil1 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 div.önsekil2 {
     margin-top: -60px;
     margin-left: 455px;
@@ -110,8 +136,9 @@ div.önsekil2 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 div.önsekil3 {
     margin-top: 156px;
     margin-left: 480px;
@@ -119,8 +146,9 @@ div.önsekil3 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 div.önsekil4 {
     margin-top: -60px;
     margin-left: 455px;
@@ -128,10 +156,9 @@ div.önsekil4 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
-    
-    
+    transform: rotate(45deg);
 }
+
 div.şablon {
     text-align: center;
     padding: 5px;
@@ -144,42 +171,83 @@ div.şablon {
     margin-top: -168px;
     margin-left: 40px
 }
+
 img {
     margin-top: 20px;
     position: relative;
-div.person {background-repeat:no-repeat;
-    margin-left: 36px;
-    position: relative;
-    margin-top: -300px;
-    margin-left:36px;
-    height:80px;
-    background-image:url(~\Content\img\ad.jpg);
 }
 
+div.person {
+    background-repeat: no-repeat;
+    margin-left: 36px;
+    position: relative;
+    margin-top: -280px;
+    width: 64px;
+    height: 80px;
+}
 
 #sayfa {
     margin-left: 800px;
     margin-top: -640px;
     height: auto;
     width: 570px;
-    background-image: url(ad.png);
-    
 }
-#tel1{margin-left: 120px ; margin-top:28px;width:300px;border:none;color:white;
-     background-color: rgb(25,32,64);line-height:20px;}
-#eposta1{margin-left:120px;width:300px;font-weight:bolder ;
-    color:white; background-color: rgb(25,32,64);border:none}
+
+#tel1 {
+    margin-left: 120px;
+    margin-top: 34px;
+    width: 300px;
+    border: none;
+    font-size: medium;
+    background-color: rgb(25,32,64);
+    line-height: 20px;
+    color: rgb(247,215,107)
+}
 
 
-#adres1{margin-left:120px;width:300px;color:white;height:40px; border:none;
-    background-color: rgb(25,32,64);text-transform: capitalize
-    
+#eposta1 {
+    margin-left: 120px;
+    width: 300px;
+    font-weight: bolder;
+    font-size: medium;
+    margin-bottom: -5px;
+    margin-bottom: -2px;
+    background-color: rgb(25,32,64);
+    border: none;
+    color: rgb(247,215,107)
 }
-#name1{ margin-left:80px;height: 40px;margin-top:-5px;color:white;
+
+
+
+
+
+#adres1 {
+    margin-left: 120px;
+    width: 318px;
+    height: 48px;
+    border: none;
+    font-size: small;
     color: rgb(247,215,107);
-   text-transform: capitalize;letter-spacing:2px;font-weight:bolder;
-    width:300px;border:none;background-color: rgb(25,32,64);font-size:18pt;
+    resize: none;
+    margin-top: 28px;
+    background-color: rgb(25,32,64);
+    text-transform: capitalize;
+    font-weight: bolder;
+    word-spacing: -1px;
+    word-wrap: break-word;
+    font-size: 6pt
+}
 
-
-
+#name1 {
+    margin-left: 80px;
+    height: 40px;
+    margin-top: 5px;
+    color: rgb(247,215,107);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    width: 300px;
+    border: none;
+    background-color: rgb(25,32,64);
+    font-size: 18pt;
 }
