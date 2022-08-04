@@ -1,0 +1,49 @@
+﻿@model Card_Resume_0._1.Views.Home.PerInfo
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="klas2.css"
+    <title></title>
+</head>
+<body>
+    <div class="ana">
+        <div class="üstsol"></div>
+        <div class="üstsağ"></div>
+        <div class="logo"></div>
+        <div class="logo1"></div>
+        <div class="alt"> </div>
+        <div class="renkalt"> </div>
+    </div>
+    <!--KARTVİZİT ÖN-->
+    <div class="anaön">
+        <div class="önsekil1"></div>
+        <div class="önsekil2"></div>
+        <div class="önsekil3"></div>
+        <div class="önsekil4"></div>
+
+
+        <div class="şablon">
+            <img src="~/Content/img/call.png" alt="call.png" />
+            <img src="~/Content/img/address.png" alt="adress.png" />
+            <img src="~/Content/img/home.png" alt="home.png" />
+        </div>
+
+        <div class="person">
+            <input type="text" id="name1" value=@Html.DisplayFor(model => model.Name1)>
+        </div>
+
+        <input type="text" id="tel1" value=@Html.DisplayFor(model => model.Tel1)><br>
+        <input type="text" id="eposta1" value=@Html.DisplayFor(model => model.E_Posta1)><br>
+        <input type="text" id="adres1" value=@Html.DisplayFor(model => model.Adres1)>
+    </div>
+</body>
+</html>
+
+

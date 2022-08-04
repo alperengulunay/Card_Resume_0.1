@@ -1,0 +1,51 @@
+﻿@model Card_Resume_0._1.Views.Home.PerInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PerInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adres1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adres1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_Posta1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_Posta1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
