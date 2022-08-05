@@ -22,11 +22,6 @@ namespace Card_Resume_0._1.Controllers
             return View();
         }
 
-        //public ActionResult Card()
-        //{
-        //    return View();
-        //}
-
         public ActionResult Card()
         {
             var lastInfo = db.PersonInfoes.OrderByDescending(p => p.ID).FirstOrDefault();
@@ -42,7 +37,7 @@ namespace Card_Resume_0._1.Controllers
         public ActionResult GeneratePDF()
         {
             // Direkt indirme
-            //var report = new Rotativa.ActionAsPdf("Card") { FileName="MyBusinessCard.pdf", PageHeight=200 };
+            //var report = new Rotativa.ActionAsPdf("Card") { FileName="MyBusinessCard.pdf", PageHeight = 120 PageWidth = 100 };
             // Önizleme ile
             var report = new Rotativa.ActionAsPdf("Card")
             {
@@ -51,7 +46,6 @@ namespace Card_Resume_0._1.Controllers
                 PageOrientation = Rotativa.Options.Orientation.Portrait,
                 ContentDisposition = Rotativa.Options.ContentDisposition.Inline
             };
-
             return report;
         }
 
@@ -66,9 +60,7 @@ namespace Card_Resume_0._1.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             return View(perInfo);
         }
-
     }
 }
