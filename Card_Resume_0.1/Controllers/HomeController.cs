@@ -37,15 +37,17 @@ namespace Card_Resume_0._1.Controllers
         public ActionResult GeneratePDF()
         {
             // Direkt indirme
-            var report = new Rotativa.ActionAsPdf("Card") { FileName = "MyBusinessCard.pdf", PageHeight = 120 PageWidth = 100 };
-            // Önizleme ile
-            var report = new Rotativa.ActionAsPdf("Card")
-            {
-                PageHeight = 120,
-                PageWidth = 100,
-                PageOrientation = Rotativa.Options.Orientation.Portrait,
-                ContentDisposition = Rotativa.Options.ContentDisposition.Inline
+            var report = new Rotativa.ActionAsPdf("Card") 
+            { FileName = "MyBusinessCard.pdf", PageHeight = 120, PageWidth = 100 
             };
+            // Önizleme ile
+            //var report = new Rotativa.ActionAsPdf("Card")
+            //{
+            //    PageHeight = 120,
+            //    PageWidth = 100,
+            //    PageOrientation = Rotativa.Options.Orientation.Portrait,
+            //    ContentDisposition = Rotativa.Options.ContentDisposition.Inline
+            //};
             return report;
         }
 
