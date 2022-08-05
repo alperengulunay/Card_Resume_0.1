@@ -184,6 +184,7 @@ div.person {
     margin-top: -280px;
     width: 64px;
     height: 80px;
+    background-image: url('img/css_img/ad.png');
 }
 
 #sayfa {
