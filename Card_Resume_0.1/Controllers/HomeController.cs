@@ -42,11 +42,7 @@ namespace Card_Resume_0._1.Controllers
             };
             // Önizleme ile
             //var report = new Rotativa.ActionAsPdf("Card")
-            //{
-            //    PageHeight = 120,
-            //    PageWidth = 100,
-            //    PageOrientation = Rotativa.Options.Orientation.Portrait,
-            //    ContentDisposition = Rotativa.Options.ContentDisposition.Inline
+            //{ PageHeight = 120, PageWidth = 100
             //};
             return report;
         }
@@ -60,7 +56,7 @@ namespace Card_Resume_0._1.Controllers
             {
                 db.PersonInfoes.Add(perInfo);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("GeneratePDF");
             }
             return View(perInfo);
         }

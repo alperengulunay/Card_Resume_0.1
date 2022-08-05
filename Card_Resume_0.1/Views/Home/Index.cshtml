@@ -27,17 +27,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td >E-Posta Adresiniz : </td>
-                    <td>
-                        @Html.EditorFor(model => model.E_Posta1, new { htmlAttributes = new { @onchange = "eposta_esit(this)", @id = "eposta", @class = "text", @placeholder = "E-Posta Giriniz" } })
-                        @*@Html.ValidationMessageFor(model => model.E_Posta1, "", new { @class = "text-danger" })*@
-                    </td>
-                </tr>
-                <tr>
                     <td >Telefonunuz :</td>
                     <td>
                         @Html.EditorFor(model => model.Tel1, new { htmlAttributes = new { @onchange = "tel_esit(this)", @id = "tel", @type = "text", @placeholder = "(__)(_______)" } })
                         @*@Html.ValidationMessageFor(model => model.Tel1, "", new { @class = "text-danger" })*@
+                    </td>
+                </tr>
+                <tr>
+                    <td >E-Posta Adresiniz : </td>
+                    <td>
+                        @Html.EditorFor(model => model.E_Posta1, new { htmlAttributes = new { @onchange = "eposta_esit(this)", @id = "eposta", @class = "text", @placeholder = "E-Posta Giriniz" } })
+                        @*@Html.ValidationMessageFor(model => model.E_Posta1, "", new { @class = "text-danger" })*@
                     </td>
                 </tr>
                 <tr>
@@ -52,20 +52,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" id="top" value="GÖNDER"></td>
+                    <td><input type="submit" id="top" value="Yazdır"></td>
                 </tr>
                 @*<tr>
                     <td>
                         <input type="submit" id="pdf" value="YAZDIR">
                     </td>
                 </tr>*@
-                <tr>
-                    <td>
-                        <input type="button" onclick="location.href='/Home/GeneratePDF';" id="pdf" value="YAZDIR">
-                    </td>
-                </tr>
             </table>
-        }
+         }
     </fieldset>
     <!-- KARTVİZİT ARKA-->
     <div id=sayfa>
