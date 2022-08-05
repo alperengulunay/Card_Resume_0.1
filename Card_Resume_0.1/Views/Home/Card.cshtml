@@ -1,16 +1,13 @@
 ﻿@model Card_Resume_0._1.Models.PersonInfo
 
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="klas2.css"
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/klas2.css" rel="stylesheet" type="text/css" />
     <title></title>
+    <script src="~/Scripts/denem.js"></script>
 </head>
 <body>
     <!-- KARTVİZİT ARKA-->
@@ -38,13 +35,15 @@
             <img src="~/Content/img/home.png" alt="home.png" />
         </div>
 
+        @*<div class="person">
+                <input type="text" id="name1" value=@Html.DisplayFor(model => model.Name1)>
+            </div>*@
         <div class="person">
-            <input type="text" id="name1" value=@Html.DisplayFor(model => model.Name1)>
+            <textarea type="text" id="name1">@Html.DisplayFor(model => model.Name1)</textarea>
         </div>
-
         <input type="text" id="tel1" value=@Html.DisplayFor(model => model.Tel1)><br>
         <input type="text" id="eposta1" value=@Html.DisplayFor(model => model.E_Posta1)><br>
-        <input type="text" id="adres1" value=@Html.DisplayFor(model => model.Adres1)>
+        <textarea type="text" id="adres1" name="adres">@Html.DisplayFor(model => model.Adres1)</textarea>
     </div>
 </body>
 </html>

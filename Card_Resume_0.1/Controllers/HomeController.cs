@@ -28,11 +28,11 @@ namespace Card_Resume_0._1.Controllers
             return View(lastInfo);
         }
 
-        [HttpPost]
-        public ActionResult Bind() 
-        {
-            return RedirectToAction("Card");
-        }
+        //[HttpPost]
+        //public ActionResult Bind() 
+        //{
+        //    return RedirectToAction("Card");
+        //}
 
         public ActionResult GeneratePDF()
         {
