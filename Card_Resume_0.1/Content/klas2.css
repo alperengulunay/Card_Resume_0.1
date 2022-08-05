@@ -4,7 +4,6 @@ fieldset {
     border: 10px solid darkkhaki;
     font-family: fantasy;
     line-height: 30px;
-    background-image: url(b.jpg);
     background-size: cover;
   
 }
@@ -126,7 +125,7 @@ div.önsekil1 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 div.önsekil2 {
@@ -136,7 +135,7 @@ div.önsekil2 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
 }
 
 div.önsekil3 {
@@ -156,7 +155,7 @@ div.önsekil4 {
     position: relative;
     height: 40px;
     border: 10px solid rgb(247,215,107);
-    -webkit-transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
 }
 
 div.şablon {
@@ -177,9 +176,8 @@ img {
     position: relative;
 }
 
-div.person {
-    background-repeat: no-repeat;
-    margin-left: 36px;
+div.person {background-repeat:no-repeat
+     margin-left: 36px;
     position: relative;
     margin-top: -280px;
     width: 64px;
