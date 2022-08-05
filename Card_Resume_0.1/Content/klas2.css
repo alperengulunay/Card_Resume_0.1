@@ -5,8 +5,7 @@ fieldset {
     font-family: fantasy;
     line-height: 30px;
     background-size: cover;
-    
-    
+  
 }
 
 legend {
@@ -182,7 +181,8 @@ div.person {
     position: relative;
     margin-top: -280px;
     width: 64px;
-    height:80px;
+    height: 80px;
+    background-image: url('img/css_img/ad.png');
 }
 
 #sayfa {

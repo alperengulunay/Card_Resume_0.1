@@ -1,66 +1,70 @@
-﻿@model Card_Resume_0._1.Views.Home.PerInfo
+﻿@model Card_Resume_0._1.Models.PersonInfo
 
 <!DOCTYPE html>
-
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="~/Content/klas2.css" rel="stylesheet" type="text/css" />
     <title></title>
-    <script src="~/Scripts/denem.js" type="text/javascript"></script>
+    <script src="~/Scripts/denem.js"></script>
 </head>
 <body>
     <fieldset>
         <legend>
             KARTVİZİT FORMU
         </legend>
-        @using (Html.BeginForm())
+        @*@using (Html.BeginForm("Bind", "Home", new { htmlAttributes = new { @onsubmit = "return false" } }))*@
+        @using (Html.BeginForm(new { htmlAttributes = new { @onsubmit = "return false" } }))
         {
-        @Html.AntiForgeryToken()
-        <table>
-            <tr>
-                <td>Adınız Soyadınız : </td>
-                <td>
-                    @Html.EditorFor(model => model.Name1, new { htmlAttributes = new { @class = "name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
-                    @*@Html.ValidationMessageFor(model => model.Name1, "", new { @class = "text-danger" })*@
-                </td>
-                
-            </tr>
-            <tr>
-                <td>E-Posta Adresiniz : </td>
-                <td>
-                    @Html.EditorFor(model => model.E_Posta1, new { htmlAttributes = new { @class = "text", @placeholder = "E-Posta Giriniz" } })
-                    @*@Html.ValidationMessageFor(model => model.E_Posta1, "", new { @class = "text-danger" })*@
-                </td>
-            </tr>
-            <tr>
-                <td>Telefonunuz :</td>
-                <td>
-                    @Html.EditorFor(model => model.Tel1, new { htmlAttributes = new { @type = "text", @placeholder = "(__)(_______)" } })
-                    @*@Html.ValidationMessageFor(model => model.Tel1, "", new { @class = "text-danger" })*@
-
-                </td>
-            </tr>
-            <tr>
-                <td>LOGO:</td>
-                <td><input type="file" id="resim"></td>
-            </tr>
-            <tr>
-                <td>ADRESİNİZ : </td>
-                <td>
-                    @Html.TextAreaFor(model => model.Adres1, new { @cols = "40", @rows = "10", @name = "adres" })
-                    @*@Html.ValidationMessageFor(model => model.Adres1, "", new { @class = "text-danger" })*@
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" id="top" value="GÖNDER" onclick=esit()></td>
-            </tr>
-            <tr>
-                <td><input type="button" onclick="location.href='/Home/GeneratePDF';" id="pdf" value="YAZDIR"></td>
-            </tr>
-        </table>
+            @Html.AntiForgeryToken()
+            <table>
+                <tr>
+                    <td >Adınız Soyadınız : </td>
+                    <td>
+                        @Html.EditorFor(model => model.Name1, new {htmlAttributes = new { @onchange = "ad_esit(this)", @id = "name", @class = "name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
+                        @*@Html.ValidationMessageFor(model => model.Name1, "", new { @class = "text-danger" })*@
+                    </td>
+                </tr>
+                <tr>
+                    <td >E-Posta Adresiniz : </td>
+                    <td>
+                        @Html.EditorFor(model => model.E_Posta1, new { htmlAttributes = new { @onchange = "eposta_esit(this)", @id = "eposta", @class = "text", @placeholder = "E-Posta Giriniz" } })
+                        @*@Html.ValidationMessageFor(model => model.E_Posta1, "", new { @class = "text-danger" })*@
+                    </td>
+                </tr>
+                <tr>
+                    <td >Telefonunuz :</td>
+                    <td>
+                        @Html.EditorFor(model => model.Tel1, new { htmlAttributes = new { @onchange = "tel_esit(this)", @id = "tel", @type = "text", @placeholder = "(__)(_______)" } })
+                        @*@Html.ValidationMessageFor(model => model.Tel1, "", new { @class = "text-danger" })*@
+                    </td>
+                </tr>
+                <tr>
+                    <td >LOGO:</td>
+                    <td><input type="file" id="resim"></td>
+                </tr>
+                <tr>
+                    <td >ADRESİNİZ : </td>
+                    <td>
+                        @Html.TextAreaFor(model => model.Adres1, new { @onchange = "adres_esit(this)", @id = "adres", @cols = "40", @rows = "10", @name = "adres" })
+                        @*@Html.ValidationMessageFor(model => model.Adres1, "", new { @class = "text-danger" })*@
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="top" value="GÖNDER"></td>
+                </tr>
+                @*<tr>
+                    <td>
+                        <input type="submit" id="pdf" value="YAZDIR">
+                    </td>
+                </tr>*@
+                <tr>
+                    <td>
+                        <input type="button" onclick="location.href='/Home/GeneratePDF';" id="pdf" value="YAZDIR">
+                    </td>
+                </tr>
+            </table>
         }
     </fieldset>
     <!-- KARTVİZİT ARKA-->
@@ -87,33 +91,15 @@
                 <img src="~/Content/img/address.png" />
                 <img src="~/Content/img/home.png" />
             </div>
-            <div style=" background-image: url('../../Content/img/resim/ad.png'); background-repeat:no-repeat" class="person">
+
+            <div class="person">
                 <input type="text" id="name1">
-            </div>
+            </div>                           
+
             <input type="text" id="tel1"><br>
             <input type="text" id="eposta1"><br>
-            <textarea id="adres1" name="adres"></textarea>
-         </div>
-     </div>
- </body>
-</html>  
-
-
-
-
-
-<
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             <textarea id="adres1"  name="adres"></textarea>                                                               
+        </div>
+    </div>
+</body>
+</html>
