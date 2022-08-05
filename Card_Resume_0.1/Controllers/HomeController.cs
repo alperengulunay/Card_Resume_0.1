@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Card_Resume_0._1.Models;
 using Card_Resume_0._1.Views.Home;
 
 
@@ -13,7 +14,7 @@ namespace Card_Resume_0._1.Controllers
 {
     public class HomeController : Controller
     {
-        private ResumeDBContext db = new ResumeDBContext();
+        private AAContext db = new AAContext();
 
         // GET: Home
         public ActionResult Index()
@@ -28,9 +29,14 @@ namespace Card_Resume_0._1.Controllers
 
         public ActionResult Card()
         {
-            PerInfo perInfo = db.PerInfos.Find(db.PerInfos.Count() + 9);
-            //PerInfo perInfo = db.PerInfos.Find(10);
-            return View(perInfo);
+            var lastInfo = db.PersonInfoes.OrderByDescending(p => p.ID).FirstOrDefault();
+            return View(lastInfo);
+        }
+
+        [HttpPost]
+        public ActionResult Bind() 
+        {
+            return RedirectToAction("Card");
         }
 
         public ActionResult GeneratePDF()
@@ -52,11 +58,11 @@ namespace Card_Resume_0._1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index([Bind(Include = "ID,Name1,Adres1,Tel1,E_Posta1")] PerInfo perInfo)
+        public ActionResult Index([Bind(Include = "ID,Name1,Adres1,Tel1,E_Posta1")] PersonInfo perInfo)
         {
             if (ModelState.IsValid)
             {
-                db.PerInfos.Add(perInfo);
+                db.PersonInfoes.Add(perInfo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
