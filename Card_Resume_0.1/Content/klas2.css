@@ -176,8 +176,8 @@ img {
     position: relative;
 }
 
-div.person {background-repeat:no-repeat
-     margin-left: 36px;
+div.person {background-repeat:no-repeat;
+    margin-left: 36px;
     position: relative;
     margin-top: -280px;
     width: 64px;
