@@ -1,4 +1,4 @@
-﻿@model Card_Resume_0._1.Models.PersonInfo
+﻿@model Card_Resume_0._1.Models.User_Info
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -20,32 +20,32 @@
             @Html.AntiForgeryToken()
             <table>
                 <tr>
-                    <td >Adınız Soyadınız : </td>
+                    <td>Adınız Soyadınız : </td>
                     <td>
-                        @Html.EditorFor(model => model.Name1, new {htmlAttributes = new { @onchange = "ad_esit(this)", @id = "name", @class = "name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
+                        @Html.EditorFor(model => model.Name1, new { htmlAttributes = new { @onchange = "ad_esit(this)", @id = "name", @class = "name", @placeholder = "Adınızı ve Soyadınızı Giriniz" } })
                         @*@Html.ValidationMessageFor(model => model.Name1, "", new { @class = "text-danger" })*@
                     </td>
                 </tr>
                 <tr>
-                    <td >Telefonunuz :</td>
+                    <td>Telefonunuz :</td>
                     <td>
                         @Html.EditorFor(model => model.Tel1, new { htmlAttributes = new { @onchange = "tel_esit(this)", @id = "tel", @type = "text", @placeholder = "(__)(_______)" } })
                         @*@Html.ValidationMessageFor(model => model.Tel1, "", new { @class = "text-danger" })*@
                     </td>
                 </tr>
                 <tr>
-                    <td >E-Posta Adresiniz : </td>
+                    <td>E-Posta Adresiniz : </td>
                     <td>
                         @Html.EditorFor(model => model.E_Posta1, new { htmlAttributes = new { @onchange = "eposta_esit(this)", @id = "eposta", @class = "text", @placeholder = "E-Posta Giriniz" } })
                         @*@Html.ValidationMessageFor(model => model.E_Posta1, "", new { @class = "text-danger" })*@
                     </td>
                 </tr>
                 <tr>
-                    <td >LOGO:</td>
+                    <td>LOGO:</td>
                     <td><input type="file" id="resim"></td>
                 </tr>
                 <tr>
-                    <td >ADRESİNİZ : </td>
+                    <td>ADRESİNİZ : </td>
                     <td>
                         @Html.TextAreaFor(model => model.Adres1, new { @onchange = "adres_esit(this)", @id = "adres", @cols = "40", @rows = "10", @name = "adres" })
                         @*@Html.ValidationMessageFor(model => model.Adres1, "", new { @class = "text-danger" })*@
@@ -60,8 +60,8 @@
                     </td>
                 </tr>*@
             </table>
-         }
-    </fieldset>
+        }
+        </fieldset>
     <!-- KARTVİZİT ARKA-->
     <div id=sayfa>
         <div class="ana">
@@ -93,7 +93,7 @@
 
             <input type="text" id="tel1"><br>
             <input type="text" id="eposta1"><br>
-            <textarea type="text" id="adres1"  name="adres"></textarea>                                                               
+            <textarea type="text" id="adres1" style="resize: none"></textarea>                                                               
         </div>
     </div>
 </body>

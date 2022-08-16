@@ -1,4 +1,4 @@
-﻿@model Card_Resume_0._1.Models.PersonInfo
+﻿@model Card_Resume_0._1.Models.User_Info
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -35,11 +35,8 @@
             <img src="~/Content/img/home.png" alt="home.png" />
         </div>
 
-        @*<div class="person">
-                <input type="text" id="name1" value=@Html.DisplayFor(model => model.Name1)>
-            </div>*@
         <div class="person">
-            <textarea type="text" id="name1">@Html.DisplayFor(model => model.Name1)</textarea>
+            <textarea type="text" id="name1" >@Html.DisplayFor(model => model.Name1)</textarea>
         </div>
         <input type="text" id="tel1" value=@Html.DisplayFor(model => model.Tel1)><br>
         <input type="text" id="eposta1" value=@Html.DisplayFor(model => model.E_Posta1)><br>

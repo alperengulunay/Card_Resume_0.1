@@ -229,20 +229,21 @@ div.person {
     background-color: rgb(25,32,64);
     text-transform: capitalize;
     font-weight: bolder;
-    word-spacing: -1px;
+    word-spacing: 1px;
     word-wrap: break-word;
     font-size: 6pt
 }
 
 #name1 {
     margin-left: 80px;
-    height: 40px;
+    height: 60px;
     margin-top: 5px;
     color: rgb(247,215,107);
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bolder;
-    width: 300px;
+    resize: none;
+    width: 320px;
     border: none;
     background-color: rgb(25,32,64);
     font-size: 18pt;

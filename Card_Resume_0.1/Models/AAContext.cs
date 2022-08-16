@@ -8,6 +8,6 @@ namespace Card_Resume_0._1.Models
 {
     public class AAContext : DbContext
     {
-        public DbSet<PersonInfo> PersonInfoes { get; set; }
+        public DbSet<User_Info> User_Infos { get; set; }
     }
 }
