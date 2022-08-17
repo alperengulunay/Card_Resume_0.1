@@ -130,7 +130,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\User_InfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,6 +146,7 @@
     <Compile Include="Views\Home\PerInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\img\css_img\ad.png" />
     <Content Include="Content\klas2.css" />
     <Content Include="favicon.ico" />
@@ -189,7 +189,6 @@
     <Content Include="Views\User_Info\Details.cshtml" />
     <Content Include="Views\User_Info\Edit.cshtml" />
     <Content Include="Views\User_Info\Index.cshtml" />
-    <Content Include="Views\Resume\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
